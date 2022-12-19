@@ -6,13 +6,13 @@ bool InputManager::isSpriteClicked(sf::Sprite sprite, sf::Mouse::Button m_Button
 {
 	if (sf::Mouse::isButtonPressed(m_Button))
 	{
-		sf::IntRect rect(sprite.getPosition().x, sprite.getPosition().y, sprite.getGlobalBounds().width, sprite.getGlobalBounds().height);
+		sf::IntRect rect(sprite.getPosition().x, sprite.getPosition().y, static_cast<int>(sprite.getGlobalBounds().width), static_cast<int>(sprite.getGlobalBounds().height));
 
 		if (rect.contains(sf::Mouse::getPosition(window)))
 			return true;
-
-		return false;
 	}
+
+	return false;
 }
 
 sf::Vector2i InputManager::getMousePos(sf::RenderWindow& window)

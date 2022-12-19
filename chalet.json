@@ -23,7 +23,7 @@
 			"cppStandard": "c++20",
 			"runtimeTypeInformation": false,
 			"cppFilesystem": true,
-			"warningsPreset": "strict",
+			"warningsPreset": "minimal",
 			"treatWarningsAsErrors": true,
 			"defines[:debug]": [
 				"_DEBUG"

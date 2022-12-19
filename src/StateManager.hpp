@@ -11,8 +11,8 @@ typedef std::unique_ptr<State> STATE_REF;
 class StateManager
 {
 public:
-	StateManager();
-	virtual ~StateManager();
+	StateManager() {};
+	~StateManager() {};
 
 	void addState(STATE_REF state, bool isReplacing = true);
 	void deleteState();

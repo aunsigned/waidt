@@ -36,7 +36,7 @@ void StateManager::handleStateChanges()
 			this->states.pop();
 
 		this->states.push(std::move(this->newState));
-		this->states.top()->WAIDT();
+		this->states.top()->init();
 
 		this->_isAdding = FALSE;
 	}

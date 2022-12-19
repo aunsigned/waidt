@@ -9,9 +9,11 @@
 	"files.associations": {
 		"*.json": "jsonc",
 		"*.desktop": "properties",
-		".clang-format": "yaml"
+		".clang-format": "yaml",
+		"memory": "cpp"
 	},
 	"cSpell.words": [
 		"WAIDT"
-	]
+	],
+	"C_Cpp.errorSquiggles": "enabled"
 }
